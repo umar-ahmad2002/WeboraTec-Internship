@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background: #faf9f6;
+    color: #242b27;
+    font-family: "DM Sans", sans-serif
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+header {
+    height: 82px;
+    padding: 0 max(28px, calc((100% - 1120px)/2));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eae9e3
+}
+
+.logo {
+    font: 700 1.45rem "Space Grotesk";
+    letter-spacing: -1.5px
+}
+
+.logo span {
+    color: #d17c55
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    color: #68716b;
+    font-size: .88rem
+}
+
+.bag {
+    font-size: .83rem;
+    font-weight: 700
+}
+
+.intro {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 95px 28px 85px
+}
+
+.kicker {
+    font-size: .68rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #a46b4f
+}
+
+.intro h1 {
+    font: 600 clamp(3.6rem, 8vw, 6.5rem)/.98 "Space Grotesk";
+    letter-spacing: -5px;
+    margin: 20px 0
+}
+
+.intro h1 em {
+    font-style: normal;
+    color: #bd7957
+}
+
+.intro>p:last-child {
+    color: #747b75;
+    line-height: 1.7;
+    max-width: 420px
+}
+
+.collection {
+    background: #f0eee8;
+    padding: 75px max(28px, calc((100% - 1064px)/2)) 90px
+}
+
+.section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 30px
+}
+
+.section-head h2,
+.story h2 {
+    font: 600 2.1rem "Space Grotesk";
+    letter-spacing: -1.2px;
+    margin: 8px 0
+}
+
+.section-head>span {
+    font-size: .75rem;
+    color: #858a83
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px
+}
+
+.card {
+    background: #fff;
+    padding: 12px 12px 18px;
+    border-radius: 8px;
+    transition: transform .25s, box-shadow .25s
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 35px #42372b18
+}
+
+.product-image {
+    height: 250px;
+    border-radius: 5px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden
+}
+
+.headphones {
+    background: #e4e8e1
+}
+
+.bottle {
+    background: #e8e1d8
+}
+
+.lamp {
+    background: #e7e5ed
+}
+
+.pill {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    background: #fff;
+    padding: 6px 9px;
+    border-radius: 2px;
+    font-size: .58rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    z-index: 2
+}
+
+.headphone-art {
+    width: 130px;
+    height: 130px;
+    border: 17px solid #293b35;
+    border-bottom: 0;
+    border-radius: 80px 80px 0 0;
+    position: relative;
+    margin-top: 35px
+}
+
+.headphone-art:before,
+.headphone-art:after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 56px;
+    background: #293b35;
+    border-radius: 9px;
+    top: 75px
+}
+
+.headphone-art:before {
+    left: -22px
+}
+
+.headphone-art:after {
+    right: -22px
+}
+
+.headphone-art i,
+.headphone-art b {
+    position: absolute;
+    width: 12px;
+    height: 40px;
+    background: #71867a;
+    top: 82px;
+    left: -15px;
+    border-radius: 6px
+}
+
+.headphone-art b {
+    left: auto;
+    right: -15px
+}
+
+.bottle-art {
+    height: 165px;
+    width: 75px;
+    background: linear-gradient(90deg, #bd7652, #e6b18b 45%, #c27b56);
+    border-radius: 19px 19px 23px 23px;
+    position: relative;
+    box-shadow: 15px 20px 30px #5b39252a
+}
+
+.bottle-art:before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 22px;
+    background: #8c5a40;
+    top: -18px;
+    left: 20px;
+    border-radius: 5px 5px 2px 2px
+}
+
+.bottle-art i {
+    position: absolute;
+    inset: 45px 12px auto;
+    height: 2px;
+    background: #f4d2b9
+}
+
+.lamp-art {
+    position: relative;
+    width: 150px;
+    height: 180px
+}
+
+.lamp-art:before {
+    content: "";
+    position: absolute;
+    width: 115px;
+    height: 65px;
+    background: #d7c6a7;
+    border-radius: 70px 70px 12px 12px;
+    top: 12px;
+    left: 18px;
+    box-shadow: 0 25px 35px #d7c6a766
+}
+
+.lamp-art i {
+    position: absolute;
+    width: 8px;
+    height: 95px;
+    background: #55566b;
+    top: 68px;
+    left: 73px
+}
+
+.lamp-art b {
+    position: absolute;
+    width: 100px;
+    height: 9px;
+    background: #55566b;
+    border-radius: 10px;
+    bottom: 8px;
+    left: 27px
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    align-items: start;
+    padding: 17px 7px 13px
+}
+
+.card-info h3 {
+    font: 600 1rem "Space Grotesk";
+    margin: 0 0 5px
+}
+
+.card-info p {
+    font-size: .78rem;
+    color: #858a83;
+    margin: 0
+}
+
+.card-info strong {
+    font-size: .9rem
+}
+
+.add {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 8px;
+    background: white;
+    border: 0;
+    border-top: 1px solid #eee;
+    color: #555f58;
+    font: 600 .8rem "DM Sans";
+    cursor: pointer
+}
+
+.add:hover {
+    color: #b76e4e
+}
+
+.story {
+    text-align: center;
+    padding: 90px 24px
+}
+
+.story h2 {
+    font-size: 2.7rem;
+    line-height: 1.1
+}
+
+.story>p:last-child {
+    color: #777f78;
+    max-width: 410px;
+    margin: 15px auto;
+    line-height: 1.7
+}
+
+footer {
+    border-top: 1px solid #e9e7e0;
+    padding: 25px max(28px, calc((100% - 1120px)/2));
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: .75rem;
+    color: #747b75
+}
+
+footer span:first-child {
+    font: 700 1rem "Space Grotesk";
+    color: #242b27
+}
+
+@media(max-width:760px) {
+    header {
+        padding: 0 20px
+    }
+
+    nav {
+        display: none
+    }
+
+    .intro {
+        padding: 65px 24px
+    }
+
+    .intro h1 {
+        letter-spacing: -3px
+    }
+
+    .collection {
+        padding: 55px 20px
+    }
+
+    .section-head {
+        display: block
+    }
+
+    .section-head>span {
+        display: block;
+        margin-top: 10px
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+        max-width: 440px;
+        margin: auto
+    }
+
+    .product-image {
+        height: 270px
+    }
+
+    .story {
+        padding: 65px 24px
+    }
+
+    footer {
+        padding: 22px;
+        flex-wrap: wrap
+    }
+}

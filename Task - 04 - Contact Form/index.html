@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Say Hello</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header><a class="brand" href="#">hello<span>.</span></a><a class="back-link" href="#">A friendly place to connect
+            <span>↗</span></a></header>
+    <main>
+        <section class="intro">
+            <p class="eyebrow">LET'S TALK</p>
+            <h1>Have a question?<br><em>Drop a note.</em></h1>
+            <p>Have an idea, a question, or just want to say hello? Fill out the form and we'll be happy to hear from
+                you.</p>
+        </section>
+        <section class="contact-layout">
+            <aside>
+                <div class="aside-mark">✳</div>
+                <h2>Good conversations<br>start here.</h2>
+                <p>This demo form checks your details in the browser and shows a confirmation message. It does not send
+                    or store your information.</p>
+                <div class="aside-contact"><span>EMAIL</span><a href="mailto:hello@example.com">hello@example.com</a>
+                </div>
+                <div class="aside-contact"><span>RESPONSE TIME</span>
+                    <p>Usually within 1–2 business days</p>
+                </div>
+            </aside>
+            <form id="contactForm" novalidate>
+                <div class="field"><label for="name">Your name <span>*</span></label><input id="name" name="name"
+                        type="text" placeholder="e.g. Alex Morgan" autocomplete="name" required><small class="error"
+                        id="nameError"></small></div>
+                <div class="field"><label for="email">Email address <span>*</span></label><input id="email" name="email"
+                        type="email" placeholder="alex@example.com" autocomplete="email" required><small class="error"
+                        id="emailError"></small></div>
+                <div class="field"><label for="message">Your message <span>*</span></label><textarea id="message"
+                        name="message" rows="5" placeholder="Tell us what's on your mind..." required></textarea><small
+                        class="error" id="messageError"></small></div><button type="submit">Send message
+                    <span>↗</span></button>
+                <p class="form-note">* Required fields</p>
+                <div class="success" id="successMessage" role="status" aria-live="polite" hidden>✓ Thanks! Your form is
+                    valid. This demo does not send messages to a server.</div>
+            </form>
+        </section>
+    </main>
+    <footer><span>© 2026 hello.</span><span>Made for learning HTML, CSS &amp; JavaScript.</span></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
